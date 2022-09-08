@@ -35,15 +35,15 @@ function App() {
 
             <div className="container">
                 <div className="row profile__bar">
-                    <div className="col-xl-1"></div>
-                    <div className="col-4 col-xl-1 align-self-start">
+                    <div className="col-sm-1 col-md-12 col-lg-1"></div>
+                    <div className="col-5 col-sm-4 col-md-3 col-lg-2 col-xl-1 align-self-start">
                         <img className="profile__logo img-fluid" src={profileLogo} alt=""/>
                     </div>
-                    <div className="col-8 col-xl-6 align-self-center">
-                        <span className="m-5 fs-3 fw-bold">Ricardo Cooper</span>
+                    <div className="col-7 col-sm-5 col-md-4 col-lg-5 col-xl-6 align-self-center">
+                        <span className="m-xl-5 fs-3 fw-bold">Ricardo Cooper</span>
                     </div>
-                    <div className="col-12 col-xl-4 align-self-end">
-                        <button type="button" className="btn btn-light m-3">
+                    <div className="col-12 col-md-5 col-lg-4 align-self-end mt-5 mt-md-0 text-center">
+                        <button type="button" className="btn btn-light m-3 ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                  className="bi bi-envelope m-1" viewBox="0 0 16 16">
                                 <path
