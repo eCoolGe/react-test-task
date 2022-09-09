@@ -2,17 +2,24 @@ import axios from "axios";
 
 export default class PostService {
     static async getAll() {
-        const response = await axios.get('https://boiling-refuge-66454.herokuapp.com/images')
-        return response;
+        return await axios.get('https://boiling-refuge-66454.herokuapp.com/images');
     }
 
     static async getById(id) {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts/' + id)
-        return response;
+        return await axios.get('https://boiling-refuge-66454.herokuapp.com/images/' + id);
     }
 
-    static async getCommentsByPostId(id) {
-        const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
-        return response;
+    static async postCommentByImageId(id, name, comment) {
+        return await axios.post(`https://boiling-refuge-66454.herokuapp.com/images/${id}/comments`, {
+            name: name,
+            comment: comment
+        })
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+        ;
     }
 }
