@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import MyButton from "./UI/button/MyButton";
 import {useFetching} from "../hooks/useFetching";
 import PostService from "../API/PostService";
 import Loader from "./UI/Loader/Loader";
